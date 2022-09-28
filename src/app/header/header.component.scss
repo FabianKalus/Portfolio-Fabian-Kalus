@@ -1,0 +1,17 @@
+@import "../../varibles";
+
+.myLogo {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: lightgray;
+    font-weight: 600;
+    margin-left: 32px;
+
+    &:hover {
+        opacity: 0.9;
+        color: $primary;
+    }
+}
