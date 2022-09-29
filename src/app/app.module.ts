@@ -6,15 +6,18 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    WelcomeComponent
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

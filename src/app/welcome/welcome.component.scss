@@ -1,0 +1,19 @@
+@import "../../varibles";
+
+.firstF {
+    color: $secondary;
+    position: absolute;
+    margin-left: -3px;
+}
+
+.welcome-img {
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.down-icon {
+height: 50px;
+width: 50px;
+}
