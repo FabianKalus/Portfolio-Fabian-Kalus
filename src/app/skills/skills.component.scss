@@ -1,4 +1,13 @@
-a {
-    font-weight: bold;
-    text-decoration: underline;
+@import "../../varibles";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+
+
+.caveat {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+   
 }
