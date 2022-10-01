@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { SkillsComponent } from './skills/skills.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 
 
@@ -15,6 +17,8 @@ import { SkillsComponent } from './skills/skills.component';
     HeaderComponent,
     WelcomeComponent,
     SkillsComponent,
+    PortfolioComponent,
+    AboutMeComponent,
   ],
   imports: [
     BrowserModule,
