@@ -8,8 +8,8 @@
 }
 
 .welcome-img {
-    height: 300px;
-    width: 300px;
+    height: 25vw;
+    width: 25vw;
     object-fit: cover;
     border-radius: 100%;
 }
@@ -19,6 +19,7 @@ height: 50px;
 width: 50px;
 position: absolute;
 cursor: pointer;
+
 }
 
 .down-icon-green {
@@ -31,4 +32,17 @@ cursor: pointer;
         opacity: 1;
     }
 
+}
+
+.caveat {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+   
+}
+
+a {
+    text-decoration: none;
 }
