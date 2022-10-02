@@ -29,7 +29,6 @@ export class PortfolioComponent implements OnInit {
   playVideo() {
     this.videoPlay = true;
 
-    console.log(this.videoPlay)
   }
   
 
@@ -37,15 +36,7 @@ export class PortfolioComponent implements OnInit {
   pauseVideo(){
     this.videoPlay = false;
  
-    console.log(this.videoPlay);
   }
 
-  onMouseEnter(hoverName: HTMLElement) {
-    hoverName.style.display = "none";
-  }
-
-  onMouseOut(hoverName: HTMLElement) {
-    hoverName.style.display = "block";
-  }
-
+ 
 }

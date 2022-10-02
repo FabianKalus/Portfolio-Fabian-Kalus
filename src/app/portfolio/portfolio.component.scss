@@ -48,7 +48,10 @@ p {
 .portfolio-element-surface {
     position: absolute;
     z-index: 1;
-   
+    opacity: 0;
+   &:hover {
+    opacity: 1;
+   }
 }
 
 .portfolio-element-title {
@@ -67,6 +70,7 @@ p {
     height: 50px;
     width: 50px;
     cursor: pointer;
+    border-bottom: 5px solid transparent;
     
     &:hover {
     border-bottom: 5px solid $primary;
