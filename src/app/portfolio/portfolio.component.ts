@@ -10,7 +10,8 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 export class PortfolioComponent implements OnInit {
-  
+ 
+
   constructor() { }
 
   ngOnInit(): void {
@@ -18,6 +19,12 @@ export class PortfolioComponent implements OnInit {
 
   play: string = "play";
   videoPlay: boolean = false;
+
+  elements: any[] = [
+    {"name": "Ring of Fire", "img": "assets/img/portfolio/ringOfFire.png"},
+    {"name": "Ring of Fire2", "img": "assets/img/portfolio/ringOfFire.png"},
+    {"name": "Ring of Fire3", "img": "assets/img/portfolio/ringOfFire.png"},
+  ]
 
   playVideo() {
     this.videoPlay = true;
@@ -33,6 +40,12 @@ export class PortfolioComponent implements OnInit {
     console.log(this.videoPlay);
   }
 
- 
+  onMouseEnter(hoverName: HTMLElement) {
+    hoverName.style.display = "none";
+  }
+
+  onMouseOut(hoverName: HTMLElement) {
+    hoverName.style.display = "block";
+  }
 
 }

@@ -1,41 +1,76 @@
 <div class="px-5 py-4 col-12 d-flex justify-content-between">
-    <div class="portfolio-left col-6 pe-1">
+    <div class="portfolio-left col-6 pe-2">
         <div class="pb-4">
             <span class="caveat">&lt; h2 &gt;</span>
             <p class="text-secondary fw-bold" style="font-size: 36px;">Portfolio</p>
             <span class="caveat">&lt; /h2 &gt;</span>
         </div>
         <div class="portfolio-element">
-            <div class="position-relative d-flex align-items-center" (mouseenter)="playVideo()" (mouseleave)="pauseVideo()">
-                <img class="portfolio-img" src="assets/img/portfolio/ringOfFire.png">
-                <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop [muted]="'muted'" #videoPlayer>
-                    <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4"
-                        type="video/mp4">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+                (mouseleave)="pauseVideo()">
+                <div class="portfolio-element-surface">
+                    <img class="portfolio-img" src="assets/img/portfolio/ringOfFire.png">
+                    <div class="bg-white pt-1 ps-2 pe-1">
+                        <div>
+                            <p class="portfolio-element-title">Ring of fire</p>
+                            <p class="py-1 pb-2 portfolio-element-text">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing
+                                elit. Consequatur repellendus dolor, tempore
+                                incidunt quidem perferendis. Cupiditate, ab nam harum ea distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop [muted]="'muted'"
+                    #videoPlayer>
+                    <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                 </video>
-                <div class="empty-div"></div>
+                <div class="empty-div" *ngIf="!videoPlay"></div>
+                <div class="bg-white pt-1 ps-2 pe-1 w-100 h-100">
+                    <div class="bg-white">
+                        <p class="portfolio-element-title">View at</p>
+
+                    </div>
+                </div>
             </div>
-            <div class="bg-white py-2 ps-2 pe-1">
-                <p class="portfolio-element-title">Ring of fire</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur repellendus dolor, tempore
-                    incidunt quidem perferendis. Cupiditate, ab nam harum ea distinctio.</p>
-            </div>
+
+
         </div>
     </div>
     <div class="portfolio-right col-6 ">
-        <div class="portfolio-element">
-            <div class="position-relative d-flex align-items-center" (mouseenter)="playVideo()" (mouseleave)="pauseVideo()">
-                <img class="portfolio-img" src="assets/img/portfolio/ringOfFire.png">
-                <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop [muted]="'muted'" #videoPlayer>
-                    <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4"
-                        type="video/mp4">
+        <div class="portfolio-element mb-4" *ngFor="let element of elements" (mouseenter)="onMouseEnter($event.target)"
+        (mouseleave)="onMouseOut($event.target)">
+            <div class="position-relative d-flex align-items-center flex-column"
+             (mouseenter)="playVideo()" (mouseleave)="pauseVideo()">
+                <div class="portfolio-element-surface">
+                    <img class="portfolio-img" src="assets/img/portfolio/ringOfFire.png">
+                    <div class="bg-white pt-1 ps-2 pe-1">
+                        <div class="ring-element" id="mouseTarget">
+                            <p class="portfolio-element-title">{{element.name}}</p>
+                            <p class="py-1 pb-2 portfolio-element-text">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing
+                                elit. Consequatur repellendus dolor, tempore
+                                incidunt quidem perferendis. Cupiditate, ab nam harum ea distinctio.</p>
+                        </div>
+                    </div>
+                </div>
+                <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop [muted]="'muted'"
+                    #videoPlayer>
+                    <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                 </video>
-                <div class="empty-div"></div>
+                <div class="empty-div" *ngIf="!videoPlay"></div>
+                <div class="bg-white pt-1 ps-2 pe-1 w-100 h-100">
+                    <div class="">
+                        <p class="view-at-text pb-1">view at...</p>
+                        <div class="d-flex align-items-center justify-content-evenly">
+                            <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
+                            <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                            
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bg-white py-2 ps-2 pe-1">
-                <p class="portfolio-element-title">Ring of fire</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur repellendus dolor, tempore
-                    incidunt quidem perferendis. Cupiditate, ab nam harum ea distinctio.</p>
-            </div>
+
+
         </div>
     </div>
 </div>
