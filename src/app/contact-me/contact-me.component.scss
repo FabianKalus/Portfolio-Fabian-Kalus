@@ -1,0 +1,65 @@
+@import "../../varibles";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+
+.caveat {
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: italic;
+    color: gray;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+        background-color: black;
+        outline: none;
+        border: none;
+        margin-bottom: 1rem;
+        color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        font-style: italic;
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    textarea {
+        background-color: black;
+        outline: none;
+        border: none;
+        margin-bottom: 1rem;
+        color: white;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.5rem;
+        font-style: italic;
+        resize: none;
+        &::placeholder {
+            color: white;
+        }
+    }
+
+    label {
+        letter-spacing: 0.5px;
+        padding-bottom: 0.5rem;
+      
+        
+    }
+
+    button {
+        margin-top: 1rem;
+        width: 100%;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 0!important;
+}
