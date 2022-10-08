@@ -8,6 +8,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { SkillsComponent } from './skills/skills.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ContactMeComponent } from './contact-me/contact-me.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -19,11 +23,15 @@ import { AboutMeComponent } from './about-me/about-me.component';
     SkillsComponent,
     PortfolioComponent,
     AboutMeComponent,
+    ContactMeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,26 @@
+<div class="container bg-warning">
+    <div>
+        <h2>Contact me.</h2>
+        <p>Get in touch via the form below, or by emailing <a
+                href="mailto:fabiankalus@t-online.de">fabiankalus@t-online.de</a></p>
+
+        <!-- <form action="https://www.mustafaguer.de/sendMail.php" method="post" class="contactForm"> -->
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contactForm">
+            <label for="name">Name</label>
+            <!-- <input id="name" placeholder="Enter your Name" type="text" name="name" required> -->
+            <input id="name" placeholder="Enter your Name" name="name" ngModel #name="ngModel" required>
+            <label for="email" name="email">Email address</label>
+            <!-- <input id="email" placeholder="Enter your Email address" type="email" name="email" required> -->
+            <input id="email" placeholder="Enter your Email address" type="email" name="email" ngModel #email="ngModel" required>
+            <label for="message" name="message">Message</label>
+            <!-- <textarea id="message" placeholder="Enter your Message" name="message"  rows="8" required></textarea> -->
+            <textarea id="message" placeholder="Enter your Message" name="message" ngModel #message="ngModel" rows="8" required></textarea>
+            <div>
+                <!-- <button class="sendBtn" (click)="sendMail()" type="submit">SUBMIT</button> -->
+                <button [disabled]="!myForm.valid" [class.sendBtn]="myForm.valid">SUBMIT</button>
+            </div>
+            <div class="reportBox"><p>{{ submitReport }}</p></div>
+            <button *ngIf="submitComplete" (click)="closeCard()">Ok</button>
+        </form>
+    </div>
+</div>
