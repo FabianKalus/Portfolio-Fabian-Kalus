@@ -24,7 +24,7 @@ source {
 
 .portfolio-element{
     width: 100%;
-    height: 75vh;
+    height: 70vh;
     background-color: white;
     
 }
@@ -34,23 +34,24 @@ source {
 }
 
 .empty-div {
-    height: 55vh;
+    height: 50vh;
     width: 100%;
 
 }
 
 .portfolio-img {
-    height: 55vh;
+    height: 50vh;
     width: 100%;
     object-fit: cover;
     cursor: pointer;
+    background-color: rgb(29, 29, 29);
 
 
 }
 
 .portfolio-video {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     object-fit: cover;
     display: block;
 }
