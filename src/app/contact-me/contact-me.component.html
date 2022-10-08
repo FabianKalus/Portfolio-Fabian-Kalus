@@ -1,37 +1,36 @@
 <div class="col-12 text-white d-flex px-5 py-4">
-    <div class="pb-1 col-6">
-        <span class="caveat">&lt; h2 &gt;</span>
-        <p class="text-primary fw-bold" style="font-size: 36px;">Contact me</p>
-        <span class="caveat">&lt; /h2 &gt;</span><br><br>
-        <span class="caveat">&lt; p &gt;</span>
-        <p class="fw-bold">Get in touch via the form, or by emailing<br> <a
-                href="mailto:fabiankalus@t-online.de">fabiankalus@t-online.de</a></p>
-        <span class="caveat">&lt; /p &gt;</span>
-    </div>
-
-
-
-    <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contact-form col-6">
-        <span class="caveat pb-1">&lt; form &gt;</span>
-        <label for="name">Name</label>
-        <input id="name" placeholder="" name="name" ngModel #name="ngModel" required>
-
-        <label for="email" name="email">Email address</label>
-        <input id="email" placeholder="" type="email" name="email" ngModel #email="ngModel"
-            required>
-
-        <label for="message" name="message">Message</label>
-        <textarea id="message" placeholder="" name="message" ngModel #message="ngModel" rows="8"
-            required></textarea>
-
-        <button class="btn btn-outline-secondary" [disabled]="!myForm.valid"
-            [class.sendBtn]="myForm.valid">SUBMIT</button>
-
-        <div class="reportBox">
-            <p>{{ submitReport }}</p>
+    <div class="col-6">
+        <div class="pb-1">
+            <span class="caveat">&lt; h2 &gt;</span>
+            <p class="text-secondary fw-bold" style="font-size: 36px;">Contact me</p>
+            <span class="caveat">&lt; /h2 &gt;</span><br>
+            
+            
         </div>
-        <button *ngIf="submitComplete" (click)="closeCard()">Ok</button>
-        <span class="caveat pt-1">&lt; /form &gt;</span>
-    </form>
+        <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contact-form">
+            <span class="caveat pb-1">&lt; form &gt;</span>
+            <div class="d-flex justify-content-between col-12">
+
+                <!-- <label for="name">Name</label> -->
+                <input class="" id="name" placeholder="Name" name="name" ngModel #name="ngModel" required>
+
+                <!-- <label for="email" name="email">Email address</label> -->
+                <input class=""  id="email" placeholder="E-Mail" type="email" name="email" ngModel #email="ngModel" required>
+            </div>
+            <!-- <label for="message" name="message">Message</label> -->
+            <textarea id="message" placeholder="Message" name="message" ngModel #message="ngModel" rows="8"
+                required></textarea>
+
+            <button class="btn btn-outline-secondary" [disabled]="!myForm.valid"
+                [class.sendBtn]="myForm.valid">SUBMIT</button>
+
+            <div class="reportBox">
+                <p>{{ submitReport }}</p>
+            </div>
+            <button *ngIf="submitComplete" (click)="closeCard()">Ok</button>
+            <span class="caveat pt-1">&lt; /form &gt;</span>
+        </form>
+    </div>
+    <img class="germany col-5 mx-auto my-auto" src="assets/img/germany_fertgi.jpg">
 
 </div>

@@ -14,7 +14,8 @@
     flex-direction: column;
 
     input {
-        background-color: black;
+        background-color: rgb(66, 65, 65);
+        width: 48%;
         outline: none;
         border: none;
         margin-bottom: 1rem;
@@ -24,23 +25,23 @@
         padding-left: 0.5rem;
         font-style: italic;
         &::placeholder {
-            color: white;
+            color: gray;
         }
     }
 
     textarea {
-        background-color: black;
+        background-color: rgb(66, 65, 65);
         outline: none;
         border: none;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         color: white;
         padding-top: 0.5rem;
-        padding-bottom: 0.5rem;
+        padding-bottom: 0.25rem;
         padding-left: 0.5rem;
         font-style: italic;
         resize: none;
         &::placeholder {
-            color: white;
+            color: gray;
         }
     }
 
@@ -53,7 +54,8 @@
 
     button {
         margin-top: 1rem;
-        width: 100%;
+        align-self: flex-end;
+        width: 50%;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
     }
@@ -62,4 +64,10 @@
 p {
     margin-bottom: 0;
     margin-top: 0!important;
+}
+
+.germany {
+    object-fit: contain;
+    height: 80vh;
+    
 }
