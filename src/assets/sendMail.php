@@ -17,9 +17,9 @@ switch($_SERVER['REQUEST_METHOD']){
         $name = $params->name;
         $message = $params->message;
 
-        $recipient = 'mustafaguer@yahoo.de';
+        $recipient = 'fabiankalus@t-online.de';
         $subject = "Contact From $name <$email>";
-        $headers = "From:  noreply@mustafaguer.de";
+        $headers = "From:  fabiankalus@t-online.de";
 
         mail($recipient, $subject, $message, $headers);
         break;

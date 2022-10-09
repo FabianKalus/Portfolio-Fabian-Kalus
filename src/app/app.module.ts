@@ -12,6 +12,8 @@ import { FormsModule } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FooterComponent } from './footer/footer.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 
 
@@ -24,6 +26,8 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     AboutMeComponent,
     ContactMeComponent,
+    FooterComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,

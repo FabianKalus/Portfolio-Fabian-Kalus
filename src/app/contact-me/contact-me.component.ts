@@ -10,7 +10,9 @@ import { NgForm } from '@angular/forms';
 export class ContactMeComponent {
   constructor(private http: HttpClient) { }
 
-  endpoint = "https://fabian-kalus.developerakademie.net/send_mail/send_mail/send_mail.php";
+  endpoint = "https://fabian-kalus.developerakademie.net/portfolio-app/assets/sendMail.php";
+
+
   submitReport: string = '';
   submitComplete = false;
 

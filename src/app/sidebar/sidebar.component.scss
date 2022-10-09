@@ -1,0 +1,70 @@
+@import "../../varibles";
+
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 150px;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    border-right: 2px solid black;
+}
+
+.logo-container {
+    width: 100%;
+    height: 28vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    img {
+        width: 120px;
+        
+    }
+}
+
+.logo-subtitle {
+    color: rgb(158, 148, 148);
+    font-size: 12px;
+    font-style: italic;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 45vh;
+    
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+        width: 100%;
+        height: 20%;
+        border-bottom: 1px solid gray;
+
+        &:hover {
+            color: $primary!important;
+        }
+        
+    }
+}
+
+.quicklinks-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 10px;
+    width: 100%;
+    
+
+    img {
+        height: 15px;
+    }
+}
