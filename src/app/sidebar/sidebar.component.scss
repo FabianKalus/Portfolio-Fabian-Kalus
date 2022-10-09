@@ -10,13 +10,15 @@
     position: absolute;
     left: 0;
     top: 0;
-    border-right: 2px solid black;
+    
     z-index: 999999;
 }
 
 .inner-sidebar-container {
     position: fixed;
     width: 150px;
+    height: 100vh;
+    border-right: 2px solid black;
 }
 
 .logo-container {

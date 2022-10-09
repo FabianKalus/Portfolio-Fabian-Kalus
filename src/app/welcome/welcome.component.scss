@@ -4,7 +4,7 @@
 
 
 .welcome-container {
-    padding-top:2rem;
+    padding-top: 2rem;
 }
 
 .welcome-img {
@@ -13,6 +13,34 @@
     object-fit: cover;
     border-radius: 100%;
 }
+
+.down-icon-container {
+    position: absolute;
+    left: 50%;
+    transform: translate(50px, 0);
+    bottom: 70px;
+}
+
+.down-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.down-icon-green {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 
 
 .firstF {
@@ -26,9 +54,9 @@ a {
 }
 
 @media (max-width: 960px) {
-    
-.welcome-container {
-    padding-top: 10vh;
-}
+
+    .welcome-container {
+        padding-top: 10vh;
+    }
 
 }

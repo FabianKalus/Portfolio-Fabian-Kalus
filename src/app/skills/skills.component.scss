@@ -2,12 +2,35 @@
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
 
-
-.caveat {
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: italic;
-    color: gray;
-   
+.skill-container {
+    height: 100vh;
+    position: relative;
 }
+
+.down-icon-container {
+    position: absolute;
+    left: calc(50% - 75px);
+    transform: translate(50px, 0);
+    bottom: 70px;
+}
+
+.down-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    cursor: pointer;
+
+}
+
+.down-icon-green {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+

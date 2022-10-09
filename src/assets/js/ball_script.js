@@ -9,6 +9,7 @@ window.onload = function() {
 		textHeight: 20,
 		weight: true,
 		weightSize: 2.0,
+		wheelZoom: false,
 		
 	  });
 	} catch(e) {
