@@ -1,0 +1,30 @@
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 120px;
+}
+
+.footer-icon {
+    height: 40px;
+    margin-left: 25px;
+}
+
+.footer-icon-green {
+    position: absolute;
+    height: 40px;
+    left: 0;
+    opacity: 0;
+    margin-left: 25px;
+    &:hover {
+        opacity: 1;
+    }  
+}
+
+.footer-text-container {
+    width: 38vw;
+    justify-content: space-between;
+    font-size: 15px;
+    font-style: italic;
+    
+}

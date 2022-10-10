@@ -1,11 +1,11 @@
-<div id="contact" class="ps-6 text-white d-flex px-3 py-4">
-    <div class="col-6">
+<div id="contact" class="ps-6 contact-container d-flex px-3 ">
+    <div class="col-6 my-auto">
         <div class="pb-1">
             <span class="caveat">&lt; h2 &gt;</span>
             <p class="text-secondary fw-bold" style="font-size: 36px;">Contact me</p>
             <span class="caveat">&lt; /h2 &gt;</span><br>
-            
-            
+
+
         </div>
         <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contact-form">
             <span class="caveat pb-1">&lt; form &gt;</span>
@@ -15,7 +15,8 @@
                 <input class="" id="name" placeholder="Name" name="name" ngModel #name="ngModel" required>
 
                 <!-- <label for="email" name="email">Email address</label> -->
-                <input class=""  id="email" placeholder="E-Mail" type="email" name="email" ngModel #email="ngModel" required>
+                <input class="" id="email" placeholder="E-Mail" type="email" name="email" ngModel #email="ngModel"
+                    required>
             </div>
             <!-- <label for="message" name="message">Message</label> -->
             <textarea id="message" placeholder="Message" name="message" ngModel #message="ngModel" rows="8"
@@ -31,6 +32,7 @@
             <span class="caveat pt-1">&lt; /form &gt;</span>
         </form>
     </div>
-    <img class="germany col-5 mx-auto my-auto" src="assets/img/germany_fertgi.jpg">
-
+    <div class="mx-auto my-auto">
+        <img class="germany mx-auto my-auto" src="assets/img/germany_fertig.jpg">
+    </div>
 </div>
