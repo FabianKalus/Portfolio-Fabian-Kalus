@@ -1,42 +1,47 @@
 @import "../../varibles";
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
-p {
-    margin-bottom: 0;
-    margin-top: 0!important;
-}
-
 video {
     margin-bottom: 0;
-}
-
-source {
-    margin-bottom: 0;
-}
-
-.caveat {
-    font-family: 'Caveat', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    font-style: italic;
-    color: gray;
 }
 
 .portfolio-element{
     width: 100%;
     height: 70vh;
-    background-color: white;
+    background-color: 1d1d1d;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 2px solid black;
     
 }
 
 .portfolio-element-text {
     font-size: 14px;
+    text-align: center;
+    font-style: italic;
 }
 
-.empty-div {
+.play-overlay {
     height: 50vh;
     width: 100%;
+    background-color: rgba($color: white, $alpha: 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.biggerImg {
+       animation: growImg 4s;
+       transform: scale(1.25);
+}
+
+@keyframes growImg {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.25);
+    }
 }
 
 .portfolio-img {
@@ -45,8 +50,6 @@ source {
     object-fit: cover;
     cursor: pointer;
     background-color: rgb(29, 29, 29);
-
-
 }
 
 .portfolio-video {
@@ -67,7 +70,8 @@ source {
 
 .portfolio-element-title {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 24px;
+    
 }
 
 .ring-element {
@@ -75,7 +79,17 @@ source {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
+}
 
+.project-description-container {
+    background-color: #292929;
+    height: 20vh;
+    color: lightgray;
+    border-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
 }
 
 .view-at-container {
@@ -84,7 +98,7 @@ source {
     align-items: center;
     width: 100%;
     height: 20vh;
-    background-color: white;
+    background-color: #292929;
 }
 
 .view-at-icon {
@@ -101,3 +115,17 @@ source {
 
 }
 
+.playbutton_filled{
+    height: 70px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.playbutton_unfilled{
+    height: 70px;
+    
+}

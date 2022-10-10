@@ -1,113 +1,121 @@
-<div id="portfolio" class="px-3 ps-6 py-4 d-flex justify-content-between">
-    <div class="portfolio-left col-6 pe-2">
+<div id="portfolio" class="px-3 pt-4 ps-6 d-flex justify-content-between">
+    <div class="portfolio-left col-6 pe-1">
         <div class="pb-4">
             <span class="caveat">&lt; h2 &gt;</span>
             <p class="subtitle text-secondary" >Portfolio</p>
             <span class="caveat">&lt; /h2 &gt;</span>
         </div>
-        <div class="portfolio-element mb-4">
-            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+        <div class="portfolio-element mb-3">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(1)"
                 (mouseleave)="pauseVideo()">
-                <div class="portfolio-element-surface">
+                <div class="portfolio-element-surface w-100">
                     <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                     </video>
-                    <div class="empty-div" *ngIf="!videoPlay"></div>
+                    <div class="play-overlay" *ngIf="!videoPlay">
+                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo()">
+                    </div>
                     <div class="view-at-container">
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                        <a href="#"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" src="assets/img/portfolio/fotohomepage_screen(5).jpg">
-                <div class="ring-element ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title">Ring of fire</p>
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 1}" src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                    <p class="portfolio-element-title" ng-class="{red: hover}" >Homepage photographer</p>
                     <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
                 </div>
             </div>
         </div>
-        <div class="portfolio-element mb-4">
-            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+        <div class="portfolio-element mb-3">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(2)"
                 (mouseleave)="pauseVideo()">
-                <div class="portfolio-element-surface">
+                <div class="portfolio-element-surface w-100">
                     <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                     </video>
-                    <div class="empty-div" *ngIf="!videoPlay"></div>
+                    <div class="play-overlay" *ngIf="!videoPlay">
+                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo()">
+                    </div>
                     <div class="view-at-container">
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                        <a href="#"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" src="assets/img/portfolio/elpollo_fertig.jpg">
-                <div class="ring-element ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title">Ring of fire</p>
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 2}" src="assets/img/portfolio/elpollo_fertig.jpg">
+                <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                    <p class="portfolio-element-title" ng-class="{red: hover}" >Homepage photographer</p>
                     <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
                 </div>
             </div>
         </div>
     </div>
-    <div class="portfolio-right col-6 ps-2">
-        <div class="portfolio-element mb-4">
-            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+    <div class="portfolio-right col-6 ps-1">
+        <div class="portfolio-element mb-3">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(3)"
                 (mouseleave)="pauseVideo()">
-                <div class="portfolio-element-surface">
+                <div class="portfolio-element-surface w-100">
                     <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                     </video>
-                    <div class="empty-div" *ngIf="!videoPlay"></div>
+                    <div class="play-overlay" *ngIf="!videoPlay">
+                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo()">
+                    </div>
                     <div class="view-at-container">
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                        <a href="#"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
-                <div class="ring-element ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title">Ring of fire</p>
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 3}" src="assets/img/portfolio/pokemon_screen.jpg">
+                <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                    <p class="portfolio-element-title" ng-class="{red: hover}" >Homepage photographer</p>
                     <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
                 </div>
             </div>
-        </div>
-        <div class="portfolio-element mb-4">
-            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+        </div> <div class="portfolio-element mb-3">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(4)"
                 (mouseleave)="pauseVideo()">
-                <div class="portfolio-element-surface">
+                <div class="portfolio-element-surface w-100">
                     <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                     </video>
-                    <div class="empty-div" *ngIf="!videoPlay"></div>
+                    <div class="play-overlay" *ngIf="!videoPlay">
+                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo()">
+                    </div>
                     <div class="view-at-container">
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                        <a href="#"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" src="assets/img/portfolio/elpollo_fertig.jpg">
-                <div class="ring-element ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title">Ring of fire</p>
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 4}" src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
+                <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                    <p class="portfolio-element-title" ng-class="{red: hover}" >Homepage photographer</p>
                     <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
                 </div>
             </div>
-        </div>
-        <div class="portfolio-element mb-4">
-            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="playVideo()"
+        </div> <div class="portfolio-element mb-3">
+            <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(5)"
                 (mouseleave)="pauseVideo()">
-                <div class="portfolio-element-surface">
+                <div class="portfolio-element-surface w-100">
                     <video class="portfolio-video mx-auto" *ngIf="videoPlay" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Funny rubbit's 10 sec video.mp4" type="video/mp4">
                     </video>
-                    <div class="empty-div" *ngIf="!videoPlay"></div>
+                    <div class="play-overlay" *ngIf="!videoPlay">
+                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo()">
+                    </div>
                     <div class="view-at-container">
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/github-fill.png"></a>
-                        <a href="#"><img class="view-at-icon" src="assets/img/portfolio/laptop.png"></a>
+                        <a href="#"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" src="assets/img/portfolio/pokemon_screen.jpg">
-                <div class="ring-element ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title">Ring of fire</p>
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 5}" src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                    <p class="portfolio-element-title" ng-class="{red: hover}" >Homepage photographer</p>
                     <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
                 </div>
             </div>
