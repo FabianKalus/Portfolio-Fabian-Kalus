@@ -11,7 +11,7 @@
     position: absolute;
     left: calc(50% - 75px);
     transform: translate(50px, 0);
-    bottom: 70px;
+    bottom: 100px;
 }
 
 .down-icon {
@@ -28,7 +28,6 @@
     position: absolute;
     opacity: 0;
     cursor: pointer;
-
     &:hover {
         opacity: 1;
     }
