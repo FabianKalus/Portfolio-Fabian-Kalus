@@ -29,11 +29,13 @@
             ],
             "styles": [
               "node_modules/font-awesome/css/font-awesome.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "./node_modules/aos/dist/aos.css"
             ],
             "scripts": [
               "src/assets/js/ball_script.js",
-              "src/assets/js/tagcanvas.min.js"
+              "src/assets/js/tagcanvas.min.js",
+              "./node_modules/aos/dist/aos.js"
             ]
           },
           "configurations": {
