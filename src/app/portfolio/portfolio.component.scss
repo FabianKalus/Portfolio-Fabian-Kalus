@@ -17,9 +17,11 @@ video {
 }
 
 .portfolio-element-text {
-    font-size: 14px;
+    font-size: 13px;
     text-align: center;
     font-style: italic;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .play-overlay {
@@ -72,21 +74,15 @@ video {
 
 .portfolio-element-title {
     font-weight: bold;
-    font-size: 24px;
+    font-size: 25px;
+    color: white;
     
-}
-
-.ring-element {
-    height: 20vh;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
 }
 
 .project-description-container {
     background-color: #292929;
     height: 20vh;
-    color: lightgray;
+    color: rgb(182, 181, 181);
     border-top: 0;
     display: flex;
     flex-direction: column;
