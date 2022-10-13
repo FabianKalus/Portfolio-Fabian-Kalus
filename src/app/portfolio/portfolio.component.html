@@ -2,7 +2,7 @@
     <div class="portfolio-left col-6 pe-1">
         <div class="pb-4">
             <span class="caveat">&lt; h2 &gt;</span>
-            <p class="subtitle text-secondary" >Portfolio</p>
+            <p class="subtitle text-secondary">Portfolio</p>
             <span class="caveat">&lt; /h2 &gt;</span>
         </div>
         <div class="portfolio-element mb-3">
@@ -17,14 +17,19 @@
                         <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
                         <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(1)">
                     </div>
-                    <div class="view-at-container" >
-                        <a href="https://fabian-kalus.de/Theresas%20Website/index.html" target="_blank"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
+                    <div class="view-at-container">
+                        <a href="https://fabian-kalus.de/Theresas%20Website/index.html" target="_blank"><button
+                                class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 1}" src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 1}"
+                    src="assets/img/portfolio/fotohomepage_screen(5).jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Homepage Theresa Dehmer</p>
-                    <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
+                    <div>
+                        <p class="portfolio-element-text ">Theresa is a professional photographer from Heidelberg.</p>
+                        <p class="portfolio-element-text ">Her homepage is based on JavaScript and Bootstrap.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -41,13 +46,17 @@
                         <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(2)">
                     </div>
                     <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/Task-Manager/index.html"  target="_blank"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
+                        <a href="https://fabian-kalus.de/Task-Manager/index.html" target="_blank"><button
+                                class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 2}" src="assets/img/portfolio/kanbanboard_laptop.jpg">
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 2}"
+                    src="assets/img/portfolio/kanbanboard_laptop.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title bree" >Kanban-Board</p>
-                    <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
+                    <p class="portfolio-element-title bree">Kanban-Board</p>
+                    <p class="portfolio-element-text ">This Kanban-Board based on JavaScript was developed as a group
+                        project. The board gives an overview over the current tasks in a project by showing the status,
+                        assignments and other informations.</p>
                 </div>
             </div>
         </div>
@@ -66,16 +75,21 @@
                         <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(3)">
                     </div>
                     <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/Pokedex/index.html" target="_blank"><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
+                        <a href="https://fabian-kalus.de/Pokedex/index.html" target="_blank"><button
+                                class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 3}" src="assets/img/portfolio/pokemon_screen.jpg">
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 3}"
+                    src="assets/img/portfolio/pokemon_screen.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title bree" >Pokedex</p>
-                    <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
+                    <p class="portfolio-element-title bree">Pokedex</p>
+                    <p class="portfolio-element-text ">Based on JavaScript and a RESTful API.<br>
+                        The user gets information on selected properties of all Pokemon and can become a Poke-Master.
+                    </p>
                 </div>
             </div>
-        </div> <div class="portfolio-element mb-3">
+        </div>
+        <div class="portfolio-element mb-3">
             <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(4)"
                 (mouseleave)="pauseVideo()">
                 <div class="portfolio-element-surface w-100">
@@ -88,16 +102,20 @@
                         <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(4)">
                     </div>
                     <div class="view-at-container">
-                        <a href="https://www.fabian-kalus.de/ring_of_fire/"  target="_blank"><button class="btn btn-outline-secondary px-auto py2 fw-bold">Try out!</button></a>
+                        <a href="https://www.fabian-kalus.de/ring_of_fire/" target="_blank"><button
+                                class="btn btn-outline-secondary px-auto py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 4}" src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 4}"
+                    src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Ring of Fire</p>
-                    <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
+                    <p class="portfolio-element-text ">The popular drinking game as multi-user-app based on Angular and
+                        Firebase. By drawing cards in turns, the players get instruction on who should have a drink.</p>
                 </div>
             </div>
-        </div> <div class="portfolio-element mb-3">
+        </div>
+        <div class="portfolio-element mb-3">
             <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(5)"
                 (mouseleave)="pauseVideo()">
                 <div class="portfolio-element-surface w-100">
@@ -110,13 +128,15 @@
                         <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(5)">
                     </div>
                     <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/El_Pollo_Locco/index.html"  target="_blank" ><button class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
+                        <a href="https://fabian-kalus.de/El_Pollo_Locco/index.html" target="_blank"><button
+                                class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 5}" src="assets/img/portfolio/elpollo_fertig.jpg">
+                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 5}"
+                    src="assets/img/portfolio/elpollo_fertig.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
-                    <p class="portfolio-element-title bree" >El Pollo Loco</p>
-                    <p class="portfolio-element-text ">Lorem ipsum dol Qui dolore optio nulla consectetur nostrum voluptatibus eveniet harum. Qui ipsum iste dolorem corporis.</p>
+                    <p class="portfolio-element-title bree">El Pollo Loco</p>
+                    <p class="portfolio-element-text ">JavaScript - based Jump & Run game with Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
                 </div>
             </div>
         </div>
