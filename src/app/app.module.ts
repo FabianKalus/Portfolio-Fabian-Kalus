@@ -14,6 +14,8 @@ import { ContactMeComponent } from './contact-me/contact-me.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FooterComponent } from './footer/footer.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { HomeComponent } from './home/home.component';
 
 
 
@@ -28,6 +30,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ContactMeComponent,
     FooterComponent,
     SidebarComponent,
+    ImprintComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
