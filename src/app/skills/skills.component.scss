@@ -39,6 +39,23 @@
         width: 100vw;
         margin-left: 0!important;
     }
+}
 
+@media (max-width: 768px) {
+    .skill-container {
+      height: auto;
+    }
+    canvas {
+        width: 80vw!important;
+        padding: 0 auto!important
+    }
+    .skill-ball-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .down-icon-container {
+        bottom: 25px;
+    }
 }
 

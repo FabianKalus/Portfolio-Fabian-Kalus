@@ -133,5 +133,15 @@ video {
         width: 100vw;
         margin-left: 0!important;
     }
+}
+@media (max-width: 768px) {
+    #portfolio {
+       align-items: center;
+    }
+    .portfolio-element-text {
+      
+        padding-left: 0rem;
+        padding-right:0rem;
+    }
 
 }
