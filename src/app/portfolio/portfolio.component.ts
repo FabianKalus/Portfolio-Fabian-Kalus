@@ -22,23 +22,23 @@ export class PortfolioComponent implements OnInit {
   imgNumber: number = 0;
   videoNumber: number = 0;
 
-  elements: any[] = [
-    {"name": "Ring of Fire", "img": "assets/img/portfolio/ringOfFire.png"},
-    {"name": "Ring of Fire2", "img": "assets/img/portfolio/ringOfFire.png"},
-    {"name": "Ring of Fire3", "img": "assets/img/portfolio/ringOfFire.png"},
-  ]
+  bla(){
+    alert('asdf')
+  }
+
 
   playVideo(x) {
-    this.videoPlay = true;
+   
     this.videoNumber = x;
-
+    this.videoPlay = false;
+ 
   }
   
   scaleImg(x) {
     this.imgNumber = x;
   }
 
-
+ 
   pauseVideo(){
     this.videoPlay = false;
     this.imgNumber = 0;
