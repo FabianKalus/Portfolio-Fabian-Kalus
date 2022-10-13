@@ -42,6 +42,7 @@ export class PortfolioComponent implements OnInit {
   pauseVideo(){
     this.videoPlay = false;
     this.imgNumber = 0;
+    this.videoNumber = 0;
   }
 
  
