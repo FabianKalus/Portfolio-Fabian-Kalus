@@ -44,8 +44,6 @@
     label {
         letter-spacing: 0.5px;
         padding-bottom: 0.5rem;
-      
-        
     }
 
     button {
@@ -62,3 +60,15 @@
     height: 90vh;
     
 }
+
+@media (max-width: 992px) {
+    .contact-container {
+        width: 100vw;
+        margin-left: 0!important;
+    }
+    .germany {
+        height: 75vh;
+    }
+
+}
+

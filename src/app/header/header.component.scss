@@ -1,14 +1,14 @@
 @import "../../varibles";
 .header-container {
-  
-    position: absolute;
+    background-color: rgba($color: #1d1d1d, $alpha: 0.7);
+    position: fixed;
     top: 0;
     z-index: 99999;
     height: 10vh;
 }
 
 .myLogo {
-    height: 60px;
+    height: 7vh;
     
     &:hover {
         opacity: 0.7;
@@ -22,9 +22,9 @@
     a {
         text-decoration: none;
         color: lightgray;
-        font-weight: 600;
+      
         font-size: 16px;
-        letter-spacing: 1.5px;
+       
         margin-left: 1.5rem;
     
         &:hover {

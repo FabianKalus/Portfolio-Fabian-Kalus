@@ -125,5 +125,12 @@ video {
 
 .playbutton_unfilled{
     height: 70px;
-    
+}
+
+@media (max-width: 992px) {
+    #portfolio {
+        width: 100vw;
+        margin-left: 0!important;
+    }
+
 }
