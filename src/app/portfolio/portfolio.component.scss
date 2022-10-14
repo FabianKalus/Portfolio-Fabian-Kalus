@@ -18,7 +18,7 @@ video {
 
 
 .portfolio-element-text {
-    font-size: 15px;
+    font-size: 17px;
     text-align: center;
     font-style: italic;
     padding-left: 1rem;
@@ -150,6 +150,26 @@ video {
     }
     .project-description-container {
         height: 27vh;
+    }
+
+}
+
+@media (max-width: 768px) {
+    #portfolio {
+       align-items: center;
+    }
+    .portfolio-element-text {
+        padding-left: 0rem;
+        padding-right:0rem;
+    }
+    .portfolio-element{
+        height: 85vh;
+    }
+    .view-at-container {
+        height: 35vh;
+    }
+    .project-description-container {
+        height: 35vh;
     }
 
 }
