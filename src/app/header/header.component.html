@@ -10,7 +10,7 @@
         <a href="#contact">Contact</a>
     </div>
    
-    <div (click)="hideNavbar()">
+    <div (click)="hideNavbar()" class="d-sm-none d-block">
         <div class="bar" [ngClass]="{'bar1' : showNavbar == true}"></div>
         <div class="bar" [ngClass]="{'bar2' : showNavbar == true}"></div>
         <div class="bar" [ngClass]="{'bar3' : showNavbar == true}"></div>
