@@ -139,9 +139,17 @@ video {
        align-items: center;
     }
     .portfolio-element-text {
-      
         padding-left: 0rem;
         padding-right:0rem;
+    }
+    .portfolio-element{
+        height: 77vh;
+    }
+    .view-at-container {
+        height: 27vh;
+    }
+    .project-description-container {
+        height: 27vh;
     }
 
 }

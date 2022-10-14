@@ -6,10 +6,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  showNavbar: boolean = false;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  hideNavbar(){
+    if(this.showNavbar == false) {
+      this.showNavbar = true;
+    } else {
+      this.showNavbar = false;
+    }
+
+  }
 }

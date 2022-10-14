@@ -1,12 +1,26 @@
-<div class="header-container d-flex align-items-center px-3 justify-content-between w-100">
+<div class="header-container d-flex align-items-center px-3 justify-content-between w-100" [ngClass]="{'bg-not-transparent' : showNavbar == true}">
     <div>
         <a href="index.html"><img class="myLogo" src="assets/img/logo (5).png"></a>
     </div>
-    <div class="d-flex link-container poppins">
+    <div class="d-flex link-container poppins d-none d-sm-flex">
         <a href="#welcome" class="poppins">Home</a>
         <a href="#skills" class="poppins">Skills</a>
         <a href="#portfolio">Portfolio</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
     </div>
+   
+    <div (click)="hideNavbar()">
+        <div class="bar" [ngClass]="{'bar1' : showNavbar == true}"></div>
+        <div class="bar" [ngClass]="{'bar2' : showNavbar == true}"></div>
+        <div class="bar" [ngClass]="{'bar3' : showNavbar == true}"></div>
+    </div>
 </div>
+<div class="link-container-mobil poppins d-sm-none" [ngClass]="{'d-flex' : showNavbar == true}">
+    <a (click)="hideNavbar()" href="#welcome" class="poppins">Home</a>
+    <a (click)="hideNavbar()" href="#skills" class="poppins">Skills</a>
+    <a (click)="hideNavbar()" href="#portfolio">Portfolio</a>
+    <a (click)="hideNavbar()" href="#about">About</a>
+    <a (click)="hideNavbar()" href="#contact">Contact</a>
+</div>
+
