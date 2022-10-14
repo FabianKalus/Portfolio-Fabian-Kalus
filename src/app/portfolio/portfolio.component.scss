@@ -129,13 +129,13 @@ video {
 }
 
 @media (max-width: 992px) {
-    #portfolio {
+    #portfolio-container {
         width: 100vw;
         margin-left: 0!important;
     }
 }
 @media (max-width: 768px) {
-    #portfolio {
+    #portfolio-container {
        align-items: center;
     }
     .portfolio-element-text {
@@ -155,7 +155,7 @@ video {
 }
 
 @media (max-width: 768px) {
-    #portfolio {
+    #portfolio-container {
        align-items: center;
     }
     .portfolio-element-text {
