@@ -23,8 +23,10 @@
                                 class="btn btn-outline-secondary px-3 py2 fw-bold">Try out!</button></a>
                     </div>
                 </div>
-                <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 1}"
-                    src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <img class="portfolio-img d-md-block d-none" [ngClass]="{'biggerImg' : imgNumber == 1}" 
+                src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <img class="portfolio-img d-block d-md-none" [ngClass]="{'biggerImg' : imgNumber == 1}"
+                 src="assets/img/portfolio/fotohompage_responsiv.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree text-center">Homepage Theresa Dehmer</p>
                     <div>

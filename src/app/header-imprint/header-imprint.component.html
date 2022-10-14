@@ -1,0 +1,26 @@
+<div class="header-container d-flex align-items-center px-3 justify-content-between w-100" [ngClass]="{'bg-not-transparent' : showNavbar == true}">
+    <div>
+        <a href="https://fabian-kalus.de/#welcome"><img class="myLogo" src="assets/img/logo (5).png"></a>
+    </div>
+    <div routerLink="/" class="d-flex link-container poppins d-none d-sm-flex">
+        <a href="https://fabian-kalus.de/#welcome" class="poppins">Home</a>
+        <a href="https://fabian-kalus.de/#skills" class="poppins">Skills</a>
+        <a href="https://fabian-kalus.de/#portfolio">Portfolio</a>
+        <a href="https://fabian-kalus.de/#about">About</a>
+        <a href="https://fabian-kalus.de/#contact">Contact</a>
+    </div>
+   
+    <div (click)="hideNavbar()" class="d-sm-none d-block">
+        <div class="bar" [ngClass]="{'bar1' : showNavbar == true}"></div>
+        <div class="bar" [ngClass]="{'bar2' : showNavbar == true}"></div>
+        <div class="bar" [ngClass]="{'bar3' : showNavbar == true}"></div>
+    </div>
+</div>
+<div  class="link-container-mobil poppins d-sm-none" [ngClass]="{'d-flex' : showNavbar == true}">
+    <a (click)="hideNavbar()" href="fabian-kalus.de/#welcome" class="poppins">Home</a>
+    <a (click)="hideNavbar()" href="fabian-kalus.de/#skills" class="poppins">Skills</a>
+    <a (click)="hideNavbar()" href="fabian-kalus.de/#portfolio">Portfolio</a>
+    <a (click)="hideNavbar()" href="fabian-kalus.de/#about">About</a>
+    <a (click)="hideNavbar()" href="fabian-kalus.de/#contact">Contact</a>
+</div>
+

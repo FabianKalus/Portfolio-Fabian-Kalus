@@ -18,6 +18,8 @@ import { ImprintComponent } from './imprint/imprint.component';
 import { HomeComponent } from './home/home.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderImprintComponent } from './header-imprint/header-imprint.component';
+import { SidebarImprintComponent } from './sidebar-imprint/sidebar-imprint.component';
 
 
 @NgModule({
@@ -33,6 +35,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     SidebarComponent,
     ImprintComponent,
     HomeComponent,
+    HeaderImprintComponent,
+    SidebarImprintComponent,
   ],
   imports: [
     BrowserModule,
