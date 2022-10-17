@@ -16,8 +16,12 @@ export class HeaderComponent implements OnInit {
   hideNavbar(){
     if(this.showNavbar == false) {
       this.showNavbar = true;
+      const body = document.getElementsByTagName('body')[0];
+      body.classList.add('modal-open');
     } else {
       this.showNavbar = false;
+      const body = document.getElementsByTagName('body')[0];
+   body.classList.remove('modal-open');
     }
 
   }

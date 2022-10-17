@@ -8,7 +8,7 @@
 }
 
 .myLogo {
-    height: 7vh;
+    height: 50px;
     
     &:hover {
         opacity: 0.7;
@@ -21,7 +21,6 @@
         text-decoration: none;
         color: lightgray;
         font-size: 16px;
-        margin-left: 1.5rem;
         &:hover {
             opacity: 0.9;
             color: $primary;

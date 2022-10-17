@@ -8,7 +8,7 @@
 }
 
 .myLogo {
-    height: 7vh;
+    height: 50px;
     
     &:hover {
         opacity: 0.7;
@@ -21,7 +21,6 @@
         text-decoration: none;
         color: lightgray;
         font-size: 16px;
-        margin-left: 1.5rem;
         &:hover {
             opacity: 0.9;
             color: $primary;
@@ -46,9 +45,8 @@
     align-items: center;    
     a {
         text-decoration: none;
-        color: lightgray;
         font-size: 24px;
-    
+        color: lightgray;
         &:hover {
             opacity: 0.9;
             color: $primary;
@@ -75,4 +73,4 @@
     transform: translate(0, -10px) rotate(45deg);
   }
 
- 
+.modal-open { overflow-y: hidden; }
