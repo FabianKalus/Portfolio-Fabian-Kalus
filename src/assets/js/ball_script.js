@@ -10,6 +10,7 @@ window.onload = function() {
 		weight: true,
 		weightSize: 2.0,
 		wheelZoom: false,
+		noSelect: true,
 		
 	  });
 	} catch(e) {
