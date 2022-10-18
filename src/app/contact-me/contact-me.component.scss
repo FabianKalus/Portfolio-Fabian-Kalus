@@ -76,7 +76,11 @@
         height: auto;
         width: 50vw;
     }
-
+}
+@media (max-width: 350px) {
+   .contact-container{
+    height: auto;
+   }
 }
 
 

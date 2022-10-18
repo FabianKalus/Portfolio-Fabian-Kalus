@@ -108,3 +108,10 @@
           
         }
 }
+
+@media (max-width: 400px) {
+    .about-text {
+        height: auto;
+        max-height: none;
+    }
+}

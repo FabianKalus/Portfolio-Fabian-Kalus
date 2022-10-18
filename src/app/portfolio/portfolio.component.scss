@@ -173,3 +173,13 @@ video {
     }
 
 }
+
+@media (max-width: 330px) {
+   .portfolio-element-title {
+    font-size: 20px;
+   }
+   .portfolio-element-text {
+    font-size: 15px;
+   }
+}
+

@@ -85,3 +85,8 @@ a {
     width: 38vw;
     }
 }
+@media (max-width: 400px) {
+    .contact-btn {
+        width: 65vw!important;
+    }
+}
