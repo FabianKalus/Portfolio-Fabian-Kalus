@@ -12,9 +12,17 @@ body {
     margin-block-start: 0;
     margin-block-end: 0;
     background-color: #1d1d1d;
-
 }
 
+.hideScrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hideScrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
 
 p {
     margin-bottom: 0!important;
