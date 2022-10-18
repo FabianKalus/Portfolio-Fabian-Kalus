@@ -23,10 +23,10 @@
             <button class="btn btn-outline-secondary" [disabled]="!myForm.valid"
                 [class.sendBtn]="myForm.valid">SUBMIT</button>
 
-            <div class="reportBox">
-                <p>{{ submitReport }}</p>
+            <div class="reportBox pt-2">
+                <p class="text-white">{{ submitReport }}</p>
             </div>
-            <button *ngIf="submitComplete" (click)="closeCard()">Ok</button>
+            <button class="btn btn-outline-secondary" *ngIf="submitComplete" (click)="closeCard()">Ok</button>
             <span class="caveat pt-1">&lt; /form &gt;</span>
         </form>
     </div>

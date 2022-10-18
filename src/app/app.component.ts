@@ -9,16 +9,10 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'portfolio-app';
-  constructor(private router: Router) { }
+ 
 
   ngOnInit(){
     AOS.init();
 
-    this.router.events.subscribe((event) => {
-      if (!(event instanceof NavigationEnd)) {
-          return;
-      }
-      window.scrollTo(0, 0)
-  });
     }
 }

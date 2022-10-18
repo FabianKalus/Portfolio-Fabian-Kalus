@@ -10,7 +10,7 @@ import { NgForm } from '@angular/forms';
 export class ContactMeComponent {
   constructor(private http: HttpClient) { }
 
-  endpoint = "https://fabian-kalus.developerakademie.net/portfolio-app/assets/sendMail.php";
+  endpoint = "https://fabian-kalus.de/assets/sendMail.php";
 
 
   submitReport: string = '';
@@ -41,7 +41,7 @@ export class ContactMeComponent {
 
   handleError(error: any, form: any) {
     console.log(error);
-    this.submitReport = "Error occure while sending your message! You can contact me directly on E-Mail: mustafaguer@outlook.com.";
+    this.submitReport = "Error occure while sending your message! You can contact me directly on E-Mail: kalus.developer@outlook.de.";
     this.submitComplete = true;
     form.reset();
   }
