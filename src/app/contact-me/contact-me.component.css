@@ -1,0 +1,88 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.contact-container {
+  height: 100vh;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form input {
+  background-color: rgb(66, 65, 65);
+  width: 49%;
+  outline: none;
+  border: none;
+  margin-bottom: 1rem;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  font-style: italic;
+}
+.contact-form input::-moz-placeholder {
+  color: gray;
+}
+.contact-form input:-ms-input-placeholder {
+  color: gray;
+}
+.contact-form input::placeholder {
+  color: gray;
+}
+.contact-form textarea {
+  background-color: rgb(66, 65, 65);
+  outline: none;
+  border: none;
+  margin-bottom: 0.5rem;
+  color: white;
+  padding-top: 0.5rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  font-style: italic;
+  resize: none;
+}
+.contact-form textarea::-moz-placeholder {
+  color: gray;
+}
+.contact-form textarea:-ms-input-placeholder {
+  color: gray;
+}
+.contact-form textarea::placeholder {
+  color: gray;
+}
+.contact-form label {
+  letter-spacing: 0.5px;
+  padding-bottom: 0.5rem;
+}
+.contact-form button {
+  margin-top: 1rem;
+  align-self: flex-end;
+  width: 50%;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.germany {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 80vh;
+}
+
+@media (max-width: 992px) {
+  .contact-container {
+    width: 100vw;
+  }
+  .germany {
+    height: 70vh;
+  }
+}
+@media (max-width: 768px) {
+  .germany {
+    height: auto;
+    width: 50vw;
+  }
+}
+@media (max-width: 350px) {
+  .contact-container {
+    height: auto;
+  }
+}/*# sourceMappingURL=contact-me.component.css.map */

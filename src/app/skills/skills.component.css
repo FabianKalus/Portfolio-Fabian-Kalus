@@ -1,0 +1,54 @@
+@import "~bootstrap-icons/font/bootstrap-icons.css";
+.skill-container {
+  height: 100vh;
+  position: relative;
+}
+
+.down-icon-container {
+  position: absolute;
+  left: calc(50% - 75px);
+  transform: translate(50px, 0);
+  bottom: 100px;
+}
+
+.down-icon {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.down-icon-green {
+  height: 50px;
+  width: 50px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.down-icon-green:hover {
+  opacity: 1;
+}
+
+@media (max-width: 992px) {
+  .skill-container {
+    width: 100vw;
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 992px) {
+  .skill-container {
+    height: auto;
+  }
+  canvas {
+    width: 80vw !important;
+    padding: 0 auto !important;
+  }
+  .skill-ball-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .down-icon-container {
+    bottom: 25px;
+  }
+}/*# sourceMappingURL=skills.component.css.map */
