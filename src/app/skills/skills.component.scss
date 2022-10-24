@@ -33,6 +33,12 @@
     }
 }
 
+.skill-text {
+    left: 1.5;
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    font-weight: 500;
+}
 
 @media (max-width: 992px) {
     .skill-container {

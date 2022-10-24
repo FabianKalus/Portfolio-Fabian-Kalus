@@ -6,11 +6,11 @@
             <p class="logo-subtitle">- web developer -</p>
         </div>
         <div class="navbar-container poppins" routerLink="/">
-            <a href="#welcome" style="border-top: 1px solid gray;">Home</a>
-            <a href="#skills">Skills</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
+            <a href="#welcome" [ngClass]="{'active-color' : homeActive == true}" style="border-top: 1px solid gray;">Home</a>
+            <a href="#skills" [ngClass]="{'active-color' : skillsActive == true}">Skills</a>
+            <a href="#portfolio" [ngClass]="{'active-color' : portfolioActive == true}">Portfolio</a>
+            <a href="#about" [ngClass]="{'active-color' : aboutActive == true}">About</a>
+            <a href="#contact" [ngClass]="{'active-color' : contactActive == true}">Contact</a>
         </div>
         <div class="quicklinks-container">
             <a href="https://github.com/FabianKalus" target="_blank" class="position-relative">
