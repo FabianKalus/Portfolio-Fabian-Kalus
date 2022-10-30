@@ -30,8 +30,10 @@
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree text-center">Homepage Theresa Dehmer</p>
                     <div>
-                        <p class="portfolio-element-text ">Theresa is a professional photographer from Heidelberg.</p>
-                        <p class="portfolio-element-text ">Her homepage is based on JavaScript and Bootstrap.</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">Theresa is a professional photographer from Heidelberg.</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">Her homepage is based on JavaScript and Bootstrap.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Theresa ist eine professionelle Fotografin aus Heidelberg.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Ihre Homepage basiert auf JavaScript und Bootstrap.</p>
                     </div>
                 </div>
             </div>
@@ -58,8 +60,10 @@
                     src="assets/img/portfolio/kanbanboard_laptop.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Kanban-Board</p>
-                    <p class="portfolio-element-text ">This Kanban-Board based on JavaScript was developed as a group
+                    <p *ngIf="german == false" class="portfolio-element-text ">This Kanban-Board based on JavaScript was developed as a group
                         project. The board gives an overview of the current tasks in a project.</p>
+                    <p *ngIf="german == true" class="portfolio-element-text ">Dieses Kanban-Board auf Basis von JavaScript wurde in einem Gruppenprojekt entwickelt.
+                         Das Board gibt einen Überblick über die aktuellen Aufgaben in einem Projekt.</p>
                 </div>
             </div>
         </div>
@@ -87,8 +91,11 @@
                     src="assets/img/portfolio/pokemon_screen.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Pokedex</p>
-                    <p class="portfolio-element-text ">Based on JavaScript and a RESTful API.
+                    <p *ngIf="german == false" class="portfolio-element-text ">Based on JavaScript and a RESTful API.
                         The user gets information on selected properties of all Pokemon and can become a Poke-Master.
+                    </p>
+                    <p *ngIf="german == true" class="portfolio-element-text ">Basiert auf JavaScript und einer RESTful API.
+                         Der Benutzer erhält Informationen über ausgewählte Eigenschaften aller Pokemon und kann ein Poke-Master werden.
                     </p>
                 </div>
             </div>
@@ -115,9 +122,12 @@
                     src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Ring of Fire</p>
-                    <p class="portfolio-element-text ">The popular drinking game is a multi-user-app based on Angular and
+                    <p *ngIf="german == false" class="portfolio-element-text ">The popular drinking game is a multi-user-app based on Angular and
                         Firebase. The players get instructions on who should have a drink by drawing cards in turns.</p>
-                </div>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Das beliebte Trinkspiel ist eine Multi-User-App, die auf Angular und Firebase basiert.
+                             Die Spieler erhalten Anweisungen, wer etwas trinken soll, indem sie abwechselnd Karten ziehen.</p>
+                   
+                    </div>
             </div>
         </div>
         <div class="portfolio-element mb-3" data-aos="fade-up" data-aos-duration="1000">
@@ -142,7 +152,8 @@
                     src="assets/img/portfolio/elpollo_fertig.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">El Pollo Loco</p>
-                    <p class="portfolio-element-text ">JavaScript - based Jump & Run game with Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
+                    <p *ngIf="german == false" class="portfolio-element-text ">JavaScript - based Jump & Run game with Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
+                    <p *ngIf="german == true" class="portfolio-element-text ">JavaScript basiertes Jump & Run Spiel mit Objektorientierung. Pepe möchte Siesta machen, aber die Hühner lassen ihn nicht schlafen.</p>
                 </div>
             </div>
         </div>
