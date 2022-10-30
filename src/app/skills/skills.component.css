@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.skill-ball-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .down-icon-container {
   position: absolute;
   left: calc(50% - 75px);
@@ -27,6 +33,13 @@
 }
 .down-icon-green:hover {
   opacity: 1;
+}
+
+.skill-text {
+  left: 1.5;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  font-weight: 500;
 }
 
 @media (max-width: 992px) {

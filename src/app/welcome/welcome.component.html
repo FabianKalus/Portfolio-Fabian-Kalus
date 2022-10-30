@@ -6,33 +6,46 @@
         <span class="caveat d-none d-md-flex">&lt; body &gt;</span>
         <div class="">
             <span class="caveat">&lt; h1 &gt;</span><br>
-            Hi,<br>
-            I´<span class="text-secondary">m</span> Fabian
+            <span>Hi,</span><br>
             <div>
-            <span class="firstF">K</span>
-            <span class="text-primary position-absolute">K</span>
-            <span class="text-dark">K</span>alus<br>
+                <span *ngIf="german == true">Ich </span>
+                <span class="text-secondary" *ngIf="german == true">b</span>
+                <span *ngIf="german == true">in</span>
+
+                <span *ngIf="german == false">I´</span>
+                <span class="text-secondary" *ngIf="german == false">m</span>
+                 Fabian
+                <span class="firstF">K</span>
+                <span class="text-primary position-absolute">K</span>
+                <span class="text-dark">K</span>alus<br>
             </div>
             Front-e<span class="text-primary">n</span>d developer
             <p class="caveat pt-1">&lt; /h1 &gt;</p>
         </div>
-        
-            <a href="#contact" class="d-flex flex-column py-3">
-                <span class="caveat">&lt; button &gt;</span>
-                <button class=" contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
-                    Contact me
-                </button>
-                <span class="caveat">&lt; /button &gt;</span>
-            </a>
+
+        <a href="#contact" class="d-flex flex-column py-3">
+            <span class="caveat">&lt; button &gt;</span>
+            <button class=" contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
+                Contact me
+            </button>
+            <span class="caveat">&lt; /button &gt;</span>
+        </a>
     </div>
-    <div class="d-flex align-items-center d-none d-md-flex" style="height: 100%;" >
+    <div class="d-flex align-items-center d-none d-md-flex" style="height: 100%;">
         <img src="assets/img/welcom (2).jpg" class="welcome-img">
     </div>
     <div class="welcome-img-container-mobil d-flex d-md-none w-100 justify-content-center">
         <img src="assets/img/welcom (2).jpg" class="welcome-img">
     </div>
-    <a href="#skills" class="down-icon-container"> 
+    <a href="#skills" class="down-icon-container">
         <img src="assets/img/down_icon.png" class="down-icon">
         <img src="assets/img/down_icon_green.png" class="down-icon-green">
     </a>
+    <div class="change-language-container d-flex text-white align-items-center" (click)="changeLanguage()">
+        <div class="pe-1 slide-button-text" [ngClass]="{'slide-primary' : german == true}" >DE</div>
+        <div class="slide-button-container">
+            <div class="slide-button" [ngClass]="{'slide-right' : german == false}"></div>
+        </div>
+        <div class="ps-1 slide-button-text"  [ngClass]="{'slide-secondary' : german == false}">EN</div>
+    </div>
 </div>

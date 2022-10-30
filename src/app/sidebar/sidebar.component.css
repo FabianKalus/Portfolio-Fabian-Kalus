@@ -78,4 +78,8 @@
 }
 .quicklinks-icon-green:hover {
   opacity: 1;
+}
+
+.active-color {
+  color: #2dfcd8 !important;
 }/*# sourceMappingURL=sidebar.component.css.map */

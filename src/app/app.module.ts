@@ -21,6 +21,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HeaderImprintComponent } from './header-imprint/header-imprint.component';
 import { SidebarImprintComponent } from './sidebar-imprint/sidebar-imprint.component';
 
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -44,8 +49,9 @@ import { SidebarImprintComponent } from './sidebar-imprint/sidebar-imprint.compo
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule
-    
+    BrowserAnimationsModule,
+    MatSlideToggleModule
+  
   ],
   providers: [],
   bootstrap: [AppComponent]

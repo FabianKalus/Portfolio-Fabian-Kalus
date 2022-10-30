@@ -7,15 +7,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-
+  german = true;
   
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {  
+    
+  }
 
-   
-   
-    
-    
+  changeLanguage(){
+    if(this.german == true) {
+      this.german = false
+    }
+    else {
+      this.german = true;
+    }
   }
 }

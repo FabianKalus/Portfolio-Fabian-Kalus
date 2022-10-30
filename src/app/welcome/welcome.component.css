@@ -47,6 +47,12 @@ a {
   text-decoration: none;
 }
 
+.switch-language-button {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+}
+
 @media (max-width: 1280px) {
   .welcome-header {
     font-size: 48px;
