@@ -1,11 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { HostListener } from '@angular/core';
+
 
 @Component({
   selector: 'app-sidebar',
   templateUrl: './sidebar.component.html',
   styleUrls: ['./sidebar.component.scss']
 })
+
+
 export class SidebarComponent implements OnInit {
   skillsActive: boolean = false;
   homeActive: boolean = true;
@@ -13,9 +16,23 @@ export class SidebarComponent implements OnInit {
   aboutActive: boolean = false;
   contactActive: boolean = false;
 
+  @Input() german: boolean;
+  @Output() newGerman = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  changeToGerman(){
+    if(this.german == true) {
+      this.german = false;
+      this.newGerman .emit(this.german);
+    }
+    else {
+      this.german = true;
+      this.newGerman .emit(this.german);
+    }
   }
 
 

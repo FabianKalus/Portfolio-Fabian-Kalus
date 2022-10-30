@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { NgForm } from '@angular/forms';
 
@@ -15,6 +15,7 @@ export class ContactMeComponent {
 
   submitReport: string = '';
   submitComplete = false;
+  @Input() german: boolean;
 
   onSubmit(myForm: NgForm) {
     if (myForm.valid) {

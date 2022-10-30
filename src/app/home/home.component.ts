@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  mainGerman = false;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addGerman(newGerman: boolean){
+    this.mainGerman = newGerman;
   }
 
 }

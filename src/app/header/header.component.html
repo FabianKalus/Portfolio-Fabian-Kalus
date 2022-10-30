@@ -1,15 +1,9 @@
-<div class="header-container d-flex align-items-center px-3 justify-content-between w-100" [ngClass]="{'bg-not-transparent' : showNavbar == true}">
+<div class="header-container d-flex align-items-center px-3 justify-content-between w-100"
+    [ngClass]="{'bg-not-transparent' : showNavbar == true}">
     <div routerLink="/">
         <a href="#welcome"><img class="myLogo" src="assets/img/logo (5).png"></a>
     </div>
-    <div routerLink="/" class="d-flex link-container poppins d-none d-lg-flex">
-        <a href="#welcome" class="poppins">Home</a>
-        <a href="#skills" class="poppins">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-    </div>
-   
+
     <div (click)="hideNavbar()" class="d-lg-none d-block">
         <div class="bar" [ngClass]="{'bar1' : showNavbar == true}"></div>
         <div class="bar" [ngClass]="{'bar2' : showNavbar == true}"></div>
@@ -22,5 +16,9 @@
     <a (click)="hideNavbar()" href="#portfolio">Portfolio</a>
     <a (click)="hideNavbar()" href="#about">About</a>
     <a (click)="hideNavbar()" href="#contact">Contact</a>
+    <a style="cursor: pointer;">
+        <p *ngIf="german == false" (click)="changeToGerman()">German</p>
+        <p *ngIf="german == true" (click)="changeToGerman()">Englisch</p>
+    </a>
+    
 </div>
-

@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef, Input } from '@angular/core';
 
 
 
@@ -10,7 +10,7 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 
 
 export class PortfolioComponent implements OnInit {
- 
+  @Input() german: boolean;
 
   constructor() { }
 

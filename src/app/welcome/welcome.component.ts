@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 
 @Component({
@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./welcome.component.scss']
 })
 export class WelcomeComponent implements OnInit {
-  german = true;
+  @Input() german: boolean;
   
   constructor() { }
 
@@ -15,12 +15,5 @@ export class WelcomeComponent implements OnInit {
     
   }
 
-  changeLanguage(){
-    if(this.german == true) {
-      this.german = false
-    }
-    else {
-      this.german = true;
-    }
-  }
+  
 }

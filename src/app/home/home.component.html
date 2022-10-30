@@ -1,7 +1,7 @@
-<app-header class="d-lg-none d-block"></app-header>
-<app-sidebar class="d-none d-lg-block"></app-sidebar>
-<app-welcome id="welcome"></app-welcome>
-<app-skills id="skills"></app-skills>
-<app-portfolio id="portfolio"></app-portfolio>
-<app-about-me id="about"></app-about-me>
-<app-contact-me id="contact"></app-contact-me>
+<app-header [german]="mainGerman" (newGerman)="addGerman($event)" class="d-lg-none d-block"></app-header>
+<app-sidebar [german]="mainGerman" (newGerman)="addGerman($event)" class="d-none d-lg-block"></app-sidebar>
+<app-welcome [german]="mainGerman" id="welcome"></app-welcome>
+<app-skills [german]="mainGerman" id="skills"></app-skills>
+<app-portfolio [german]="mainGerman" id="portfolio"></app-portfolio>
+<app-about-me [german]="mainGerman" id="about"></app-about-me>
+<app-contact-me [german]="mainGerman" id="contact"></app-contact-me>
