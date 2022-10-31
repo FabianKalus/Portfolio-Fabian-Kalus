@@ -13,27 +13,49 @@
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Theresa-Fotografie.mp4" type="video/mp4">
                     </video>
-                 
+
                     <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 1}">
-                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
-                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(1)">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                            <img class="playbutton_filled" src="assets/img/play_button_filled.png"
+                                (click)="playVideo(1)">
+                        </div>
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://fabian-kalus.de/Theresas%20Website/index.html" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/Theresas%20Website/index.html" target="_blank"><button
-                                class="btn btn-outline-secondary px-3 py2 fw-bold fs-4">Try out!</button></a>
+                    <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                        <p class="portfolio-element-title bree text-center">Homepage Theresa Dehmer</p>
+                        <div>
+                            <p *ngIf="german == false" class="portfolio-element-text ">Theresa is a professional
+                                photographer from Heidelberg.</p>
+                            <p *ngIf="german == false" class="portfolio-element-text ">Her homepage is based on JavaScript
+                                and Bootstrap.</p>
+                            <p *ngIf="german == true" class="portfolio-element-text ">Theresa ist eine professionelle
+                                Fotografin aus Heidelberg.</p>
+                            <p *ngIf="german == true" class="portfolio-element-text ">Ihre Homepage basiert auf JavaScript
+                                und Bootstrap.</p>
+                        </div>
                     </div>
                 </div>
-                <img class="portfolio-img d-md-block d-none" [ngClass]="{'biggerImg' : imgNumber == 1}" 
-                src="assets/img/portfolio/fotohomepage_screen(5).jpg">
+                <img class="portfolio-img d-md-block d-none" [ngClass]="{'biggerImg' : imgNumber == 1}"
+                    src="assets/img/portfolio/fotohomepage_screen(5).jpg">
                 <img class="portfolio-img d-block d-md-none" [ngClass]="{'biggerImg' : imgNumber == 1}"
-                 src="assets/img/portfolio/fotohompage_responsiv.jpg">
+                    src="assets/img/portfolio/fotohompage_responsiv.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree text-center">Homepage Theresa Dehmer</p>
                     <div>
-                        <p *ngIf="german == false" class="portfolio-element-text ">Theresa is a professional photographer from Heidelberg.</p>
-                        <p *ngIf="german == false" class="portfolio-element-text ">Her homepage is based on JavaScript and Bootstrap.</p>
-                        <p *ngIf="german == true" class="portfolio-element-text ">Theresa ist eine professionelle Fotografin aus Heidelberg.</p>
-                        <p *ngIf="german == true" class="portfolio-element-text ">Ihre Homepage basiert auf JavaScript und Bootstrap.</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">Theresa is a professional
+                            photographer from Heidelberg.</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">Her homepage is based on JavaScript
+                            and Bootstrap.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Theresa ist eine professionelle
+                            Fotografin aus Heidelberg.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Ihre Homepage basiert auf JavaScript
+                            und Bootstrap.</p>
                     </div>
                 </div>
             </div>
@@ -42,28 +64,44 @@
             <div class="position-relative d-flex align-items-center flex-column" (mouseenter)="scaleImg(2)"
                 (mouseleave)="pauseVideo()">
                 <div class="portfolio-element-surface w-100">
-                  
+
                     <video class="portfolio-video mx-auto" *ngIf="videoNumber === 2" preload="auto" autoplay loop
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Task Manager.mp4" type="video/mp4">
                     </video>
                     <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 2}">
-                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
-                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(2)">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                            <img class="playbutton_filled" src="assets/img/play_button_filled.png"
+                                (click)="playVideo(2)">
+                        </div>
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://fabian-kalus.de/Task-Manager/index.html" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/Task-Manager/index.html" target="_blank"><button
-                                class="btn btn-outline-secondary px-3 py2 fw-bold fs-4">Try out!</button></a>
+                    <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                        <p class="portfolio-element-title bree">Kanban-Board</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">This Kanban-Board based on JavaScript was
+                            developed as a group
+                            project. The board gives an overview of the current tasks in a project.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Dieses Kanban-Board auf Basis von
+                            JavaScript wurde in einem Gruppenprojekt entwickelt.
+                            Das Board gibt einen Überblick über die aktuellen Aufgaben in einem Projekt.</p>
                     </div>
                 </div>
                 <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 2}"
                     src="assets/img/portfolio/kanbanboard_laptop.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Kanban-Board</p>
-                    <p *ngIf="german == false" class="portfolio-element-text ">This Kanban-Board based on JavaScript was developed as a group
+                    <p *ngIf="german == false" class="portfolio-element-text ">This Kanban-Board based on JavaScript was
+                        developed as a group
                         project. The board gives an overview of the current tasks in a project.</p>
-                    <p *ngIf="german == true" class="portfolio-element-text ">Dieses Kanban-Board auf Basis von JavaScript wurde in einem Gruppenprojekt entwickelt.
-                         Das Board gibt einen Überblick über die aktuellen Aufgaben in einem Projekt.</p>
+                    <p *ngIf="german == true" class="portfolio-element-text ">Dieses Kanban-Board auf Basis von
+                        JavaScript wurde in einem Gruppenprojekt entwickelt.
+                        Das Board gibt einen Überblick über die aktuellen Aufgaben in einem Projekt.</p>
                 </div>
             </div>
         </div>
@@ -77,14 +115,30 @@
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/pokedex.mp4" type="video/mp4">
                     </video>
-                   
+
                     <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 3}">
-                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
-                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(3)">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                            <img class="playbutton_filled" src="assets/img/play_button_filled.png"
+                                (click)="playVideo(3)">
+                        </div>
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://fabian-kalus.de/Pokedex/index.html" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/Pokedex/index.html" target="_blank"><button
-                                class="btn btn-outline-secondary px-3 py2 fw-bold fs-4">Try out!</button></a>
+                    <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                        <p class="portfolio-element-title bree">Pokedex</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">Based on JavaScript and a RESTful API.
+                            The user gets information on selected properties of all Pokemon and can become a Poke-Master.
+                        </p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Basiert auf JavaScript und einer RESTful
+                            API.
+                            Der Benutzer erhält Informationen über ausgewählte Eigenschaften aller Pokemon und kann ein
+                            Poke-Master werden.
+                        </p>
                     </div>
                 </div>
                 <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 3}"
@@ -94,8 +148,10 @@
                     <p *ngIf="german == false" class="portfolio-element-text ">Based on JavaScript and a RESTful API.
                         The user gets information on selected properties of all Pokemon and can become a Poke-Master.
                     </p>
-                    <p *ngIf="german == true" class="portfolio-element-text ">Basiert auf JavaScript und einer RESTful API.
-                         Der Benutzer erhält Informationen über ausgewählte Eigenschaften aller Pokemon und kann ein Poke-Master werden.
+                    <p *ngIf="german == true" class="portfolio-element-text ">Basiert auf JavaScript und einer RESTful
+                        API.
+                        Der Benutzer erhält Informationen über ausgewählte Eigenschaften aller Pokemon und kann ein
+                        Poke-Master werden.
                     </p>
                 </div>
             </div>
@@ -108,26 +164,45 @@
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/ring_of_fire.mp4" type="video/mp4">
                     </video>
-                   
+
                     <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 4}">
-                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
-                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(4)">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                            <img class="playbutton_filled" src="assets/img/play_button_filled.png"
+                                (click)="playVideo(4)">
+                        </div>
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://www.fabian-kalus.de/ring_of_fire/" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="view-at-container">
-                        <a href="https://www.fabian-kalus.de/ring_of_fire/" target="_blank"><button
-                                class="btn btn-outline-secondary px-3 py2 fs-4 fw-bold">Try out!</button></a>
+                    <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                        <p class="portfolio-element-title bree">Ring of Fire</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">The popular drinking game is a
+                            multi-user-app based on Angular and
+                            Firebase. The players get instructions on who should have a drink by drawing cards in turns.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">Das beliebte Trinkspiel ist eine
+                            Multi-User-App, die auf Angular und Firebase basiert.
+                            Die Spieler erhalten Anweisungen, wer etwas trinken soll, indem sie abwechselnd Karten ziehen.
+                        </p>
+    
                     </div>
                 </div>
                 <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 4}"
                     src="assets/img/portfolio/laptop_ringOfFire_finish.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">Ring of Fire</p>
-                    <p *ngIf="german == false" class="portfolio-element-text ">The popular drinking game is a multi-user-app based on Angular and
+                    <p *ngIf="german == false" class="portfolio-element-text ">The popular drinking game is a
+                        multi-user-app based on Angular and
                         Firebase. The players get instructions on who should have a drink by drawing cards in turns.</p>
-                        <p *ngIf="german == true" class="portfolio-element-text ">Das beliebte Trinkspiel ist eine Multi-User-App, die auf Angular und Firebase basiert.
-                             Die Spieler erhalten Anweisungen, wer etwas trinken soll, indem sie abwechselnd Karten ziehen.</p>
-                   
-                    </div>
+                    <p *ngIf="german == true" class="portfolio-element-text ">Das beliebte Trinkspiel ist eine
+                        Multi-User-App, die auf Angular und Firebase basiert.
+                        Die Spieler erhalten Anweisungen, wer etwas trinken soll, indem sie abwechselnd Karten ziehen.
+                    </p>
+
+                </div>
             </div>
         </div>
         <div class="portfolio-element mb-3" data-aos="fade-up" data-aos-duration="1000">
@@ -138,22 +213,36 @@
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/El Pollo loco.mp4" type="video/mp4">
                     </video>
-                 
+
                     <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 5}">
-                        <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
-                        <img class="playbutton_filled" src="assets/img/play_button_filled.png" (click)="playVideo(5)">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
+                            <img class="playbutton_filled" src="assets/img/play_button_filled.png"
+                                (click)="playVideo(5)">
+                        </div>
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://fabian-kalus.de/El_Pollo_Locco/index.html" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                     </div>
-                    <div class="view-at-container">
-                        <a href="https://fabian-kalus.de/El_Pollo_Locco/index.html" target="_blank"><button
-                                class="btn btn-outline-secondary px-3 py2 fw-bold fs-4">Try out!</button></a>
+                    <div class="project-description-container ps-1 pe-2 py-1 w-100">
+                        <p class="portfolio-element-title bree">El Pollo Loco</p>
+                        <p *ngIf="german == false" class="portfolio-element-text ">JavaScript - based Jump & Run game with
+                            Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
+                        <p *ngIf="german == true" class="portfolio-element-text ">JavaScript basiertes Jump & Run Spiel mit
+                            Objektorientierung. Pepe möchte Siesta machen, aber die Hühner lassen ihn nicht schlafen.</p>
                     </div>
                 </div>
                 <img class="portfolio-img" [ngClass]="{'biggerImg' : imgNumber == 5}"
                     src="assets/img/portfolio/elpollo_fertig.jpg">
                 <div class="project-description-container ps-1 pe-2 py-1 w-100">
                     <p class="portfolio-element-title bree">El Pollo Loco</p>
-                    <p *ngIf="german == false" class="portfolio-element-text ">JavaScript - based Jump & Run game with Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
-                    <p *ngIf="german == true" class="portfolio-element-text ">JavaScript basiertes Jump & Run Spiel mit Objektorientierung. Pepe möchte Siesta machen, aber die Hühner lassen ihn nicht schlafen.</p>
+                    <p *ngIf="german == false" class="portfolio-element-text ">JavaScript - based Jump & Run game with
+                        Object orientation. Pepe wants to take a siesta, but the chicks don´t let him sleep.</p>
+                    <p *ngIf="german == true" class="portfolio-element-text ">JavaScript basiertes Jump & Run Spiel mit
+                        Objektorientierung. Pepe möchte Siesta machen, aber die Hühner lassen ihn nicht schlafen.</p>
                 </div>
             </div>
         </div>
