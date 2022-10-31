@@ -3,7 +3,6 @@
 
 
 .skill-container {
-    height: 100vh;
     position: relative;
 }
 
@@ -40,10 +39,10 @@
 }
 
 .skill-text {
-    left: 1.5;
     color: rgba(255, 255, 255, 0.8);
     letter-spacing: 1px;
     font-weight: 500;
+    font-size: 17px;
 }
 
 @media (max-width: 992px) {
@@ -54,9 +53,6 @@
 }
 
 @media (max-width: 992px) {
-    .skill-container {
-      height: auto;
-    }
     canvas {
         width: 80vw!important;
         padding: 0 auto!important
