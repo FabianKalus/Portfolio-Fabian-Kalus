@@ -2,26 +2,28 @@
     <div class="col-sm-6 col-12 my-auto">
         <div class="pb-1">
             <span class="caveat">&lt; h2 &gt;</span>
-            <p class="text-secondary subtitle">Contact me</p>
+            <p *ngIf="german == false" class="text-secondary subtitle">Contact me</p>
+            <p *ngIf="german == true" class="text-secondary subtitle">Kontakt</p>
             <span class="caveat">&lt; /h2 &gt;</span><br>
         </div>
         <form #myForm="ngForm" (ngSubmit)="onSubmit(myForm)" ngNativeValidate novalidate class="contact-form">
             <span class="caveat pb-1">&lt; form &gt;</span>
             <div class="d-flex justify-content-between col-12">
 
-                <!-- <label for="name">Name</label> -->
-                <input class="" id="name" placeholder="Name" name="name" ngModel #name="ngModel" required>
+                <input id="name" placeholder="Name" name="name" ngModel #name="ngModel" required>
 
-                <!-- <label for="email" name="email">Email address</label> -->
-                <input class="" id="email" placeholder="E-Mail" type="email" name="email" ngModel #email="ngModel"
+                <input id="email" placeholder="E-Mail" type="email" name="email" ngModel #email="ngModel"
                     required>
             </div>
-            <!-- <label for="message" name="message">Message</label> -->
-            <textarea id="message" placeholder="Message" name="message" ngModel #message="ngModel" rows="8"
+            <textarea *ngIf="german == false" id="message" placeholder="Message" name="message" ngModel #message="ngModel" rows="8"
+                required></textarea>
+                <textarea *ngIf="german == true" id="message" placeholder="Nachricht" name="message" ngModel #message="ngModel" rows="8"
                 required></textarea>
 
-            <button class="btn btn-outline-secondary" [disabled]="!myForm.valid"
+            <button *ngIf="german == false" class="btn btn-outline-secondary" [disabled]="!myForm.valid"
                 [class.sendBtn]="myForm.valid">SUBMIT</button>
+                <button *ngIf="german == true" class="btn btn-outline-secondary" [disabled]="!myForm.valid"
+                [class.sendBtn]="myForm.valid">SENDEN</button>
 
             <div class="reportBox pt-2">
                 <p class="text-white">{{ submitReport }}</p>

@@ -2,17 +2,30 @@
     <div class="aobut-sub-container d-flex justify-content-center flex-md-row flex-column mx-auto mx-xl-3">
         <img class="about-img" src="assets/img/aboutme.jpeg"  >
         <div class="about-text py-2" >
-            <p class=" fs-1 pb-2 subtitle">Me, Myself & I</p>
-            <div class="about-description">
-                <p class="pb-lg-1 pb-2"> My path might not be common but that’s boring anyways, right? 
-                    My journey began in Frankfurt am Main, Germany, as a police officer. Today I am a front-end developer. You might wonder why I chose such contradicting career paths. The difference is precisely the reason.
-                                   </p>
-                <p class="pb-lg-1 pb-2">My addiction to surfing and traveling began a few years ago in South Africa. I soon realized that I need more change in my life. Combining exploring new places with the lifestyle of a digital nomad, motivated me to pursue other career paths. My rational and logical thinking, as well as my passion for gaming, convinced me to use my mathematical skills for the path of front-end development. I soon discovered my interest and passion and noticed a shift of focus from my profession as a police officer to my laptop. 
+            
+            <div *ngIf="german == false" class="about-description">
+                <p class=" fs-1 subtitle">Me, Myself & I</p>
+                <p class=""> I am a 30-year-old, German-speaking Frontend Developer from Gießen.
+                     I have the analytical thinking and logical understanding of a programmer, as well as the diligence and communication skills of a police officer.
+                     My enthusiasm makes me stand out, which makes me want to understand everything and make it my own.
                 </p>
-                <p class="pb-lg-1 pb-2">Honesty is very important to me. I, therefore, feel obligated to share my curiosity for new places, new experiences and people, as well as my eagerness to become a remote developer. 
+                <p class="">I have chosen the Developer Academy to pursue my interests further.
+                     The project-based teaching method with continuous feedback from experienced developers was ideal for me.
+                      I gained experience in web development with the assistance of professionals and expanded my skills in various group- as well as in individual projects.
+                       Having the opportunity to expand the problems on my demand and being encouraged, rather than limited in my creativity, were the best aspects of this training experience.
                 </p>
-                <p>Scientists long have shown that happy employees are better employees. Let me show you how my aim to travel and work remotely will make you just as happy as me. 
+                <p class="">After graduation, I look forward to new professional perspectives to enhance my professional skills.I am also passionate about bringing my enthusiasm to use in exciting projects. 
+                </p>              
+            </div>
+            <div *ngIf="german == true" class="about-description">
+                <p class=" fs-1 subtitle">Über mich</p>
+                <p class=""> Ich bin ein 30-jähriger, deutschsprachiger Front-end Developer aus Gießen. Mir zugrunde liegen das analytische Denken und logisches Verständnis eines Programmierers sowie die Sorgfalt und die Kommunikationsfähigkeiten eines Polizeibeamten. Was mich besonders hervorhebt, ist meine Begeisterungsfähigkeit, die mich dazu bringt alles verstehen und mir zu Eigen machen zu wollen.
+
                 </p>
+                <p class="">Ich habe mich für eine Weiterbildung an der Developer Akademie entschieden. Die projektbasierte Lehrmethode unter kontinuierlichem Feedback erfahrener Entwickler/-innen war ideal für mich. Unter professioneller Anleitung konnte ich in diversen Gruppen, wie auch in Einzelprojekten, Erfahrung im Bereich der Webentwicklung sammeln und meine Fähigkeiten weiterentwickeln. Besonders die Möglichkeit, die Projekte nach eigenem Ermessen zu erweitern und meiner Kreativität freien Lauf zu lassen, bereitete mir große Freude.
+                </p>
+                <p class="">Nach meinem Abschluss freue ich mich nun auf neue berufliche Perspektiven, die mir erlauben, an interessanten Projekten meine professionellen Kompetenzen weiterzuentwickeln und meine Begeisterung auszuleben. 
+                </p>              
             </div>
         </div>
     </div>
