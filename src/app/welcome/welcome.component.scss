@@ -8,6 +8,10 @@
     height: 100vh;
 }
 
+.dark-k{
+    color: #1d1d1d;
+}
+
 .welcome-img {
     height: 27vw;
     width: 27vw;
@@ -54,6 +58,12 @@ a {
 .contact-btn {
     letter-spacing: 1px;
 }
+
+.second-line {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 @keyframes slideRight {
     0%{

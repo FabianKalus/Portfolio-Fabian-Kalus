@@ -7,17 +7,26 @@
         <div class="">
             <span class="caveat">&lt; h1 &gt;</span><br>
             <span>Hi,</span><br>
-            <div>
-                <span *ngIf="german == true">ich </span>
-                <span class="text-secondary" *ngIf="german == true">b</span>
-                <span *ngIf="german == true">in</span>
-
-                <span *ngIf="german == false">I´</span>
-                <span class="text-secondary" *ngIf="german == false">m</span>
-                 Fabian
-                <span class="firstF">K</span>
-                <span class="text-primary position-absolute">K</span>
-                <span class="text-dark">K</span>alus<br>
+            <div class="second-line d-flex" >
+                <span class="pe-1" *ngIf="german == true">ich </span>
+                <div *ngIf="german == true" class="pe-1">
+                    <span class="text-secondary">b</span>
+                    <span *ngIf="german == true">in</span>
+                </div>
+                <div *ngIf="german == false" class="pe-1">
+                    <span >I´</span>
+                    <span class="text-secondary" >m</span>
+                </div>
+                <br >
+                <div class="pe-1">
+                    Fabian
+                </div>
+                <div class="pe-1">
+                    <span class="firstF">K</span>
+                    <span class="text-primary position-absolute">K</span>
+                    <span class="dark-k">K</span>
+                    <span>alus</span><br>
+                </div>
             </div>
             Front-E<span class="text-primary">n</span>d Developer
             <p class="caveat pt-1">&lt; /h1 &gt;</p>
@@ -25,10 +34,12 @@
 
         <a href="#contact" class="d-flex flex-column py-3">
             <span class="caveat">&lt; button &gt;</span>
-            <button *ngIf="german == false" class="contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
+            <button *ngIf="german == false"
+                class="contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
                 Contact me
             </button>
-            <button *ngIf="german == true" class="contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
+            <button *ngIf="german == true"
+                class="contact-btn btn btn-outline-secondary px-3 py-1 my-2 col-7 col-md-5 fw-bold">
                 Kontakt
             </button>
             <span class="caveat">&lt; /button &gt;</span>
@@ -44,5 +55,5 @@
         <img src="assets/img/down_icon.png" class="down-icon">
         <img src="assets/img/down_icon_green.png" class="down-icon-green">
     </a>
-   
+
 </div>
