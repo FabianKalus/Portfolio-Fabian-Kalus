@@ -70,18 +70,19 @@
                         [muted]="'muted'">
                         <source class="mx-auto" src="assets/videos/Task Manager.mp4" type="video/mp4">
                     </video>
-                    <div class="position-relative">
-                        <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
-                        <a href="https://fabian-kalus.de/Task-Manager/index.html" target="_blank">
-                            <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
-                        </a>
-                    </div>
-                    <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 2}">
+                    <div class="play-overlay" [ngClass]="{'d-none' : videoNumber == 1}">
+                        <div class="position-relative">
+                            <img class="playbutton_unfilled" src="assets/img/laptop_primary_unfilled.png">
+                            <a href="https://fabian-kalus.de/Theresas%20Website/index.html" target="_blank">
+                                <img class="playbutton_filled" src="assets/img/laptop_secondary_filled.png">
+                            </a>
+                        </div>
                         <div class="position-relative">
                             <img class="playbutton_unfilled" src="assets/img/play_button_unfilled.png">
                             <img class="playbutton_filled" src="assets/img/play_button_filled.png"
                                 (click)="playVideo(2)">
                         </div>
+                       
                     </div>
                     <div class="project-description-container ps-1 pe-2 py-1 w-100">
                         <p class="portfolio-element-title bree">Kanban-Board</p>

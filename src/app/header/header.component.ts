@@ -20,10 +20,12 @@ export class HeaderComponent implements OnInit {
     if(this.german == true) {
       this.german = false;
       this.newGerman.emit(this.german);
+      this.hideNavbar()
     }
     else {
       this.german = true;
       this.newGerman.emit(this.german);
+      this.hideNavbar();
     }
   }
 

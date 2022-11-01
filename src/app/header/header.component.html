@@ -17,8 +17,8 @@
     <a (click)="hideNavbar()" href="#about">About</a>
     <a (click)="hideNavbar()" href="#contact">Contact</a>
     <a style="cursor: pointer;">
-        <p *ngIf="german == false" (click)="changeToGerman()">German</p>
-        <p *ngIf="german == true" (click)="changeToGerman()">Englisch</p>
+        <img class="flag-icon" src="assets/img/german.png" *ngIf="german == false" (click)="changeToGerman()">
+        <img class="flag-icon" src="assets/img/english.png" *ngIf="german == true" (click)="changeToGerman()">
     </a>
     
 </div>
