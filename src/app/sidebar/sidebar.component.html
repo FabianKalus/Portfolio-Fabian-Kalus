@@ -11,8 +11,8 @@
             <a href="#portfolio" [ngClass]="{'active-color' : portfolioActive == true}">Portfolio</a>
             <a href="#about" [ngClass]="{'active-color' : aboutActive == true}">About</a>
             <a href="#contact" [ngClass]="{'active-color' : contactActive == true}">Contact</a>
-            <a *ngIf="german == false" style="cursor: pointer;"><img class="flag-icon" src="assets/img/german.png" (click)="changeToGerman()"></a>
-            <a *ngIf="german == true" style="cursor: pointer;"><img class="flag-icon" src="assets/img/english.png" (click)="changeToGerman()"></a>
+            <a *ngIf="german == false" style="cursor: pointer;" (click)="changeToGerman()"><img class="flag-icon" src="assets/img/german.png" ></a>
+            <a *ngIf="german == true" style="cursor: pointer;" (click)="changeToGerman()"><img class="flag-icon" src="assets/img/english.png"></a>
         </div>
         <div class="quicklinks-container">
             <a href="https://github.com/FabianKalus" target="_blank" class="position-relative">
