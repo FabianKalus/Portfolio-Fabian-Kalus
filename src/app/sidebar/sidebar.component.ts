@@ -38,7 +38,6 @@ export class SidebarComponent implements OnInit {
 
   @HostListener('window:scroll', ['$event'])
   track(event) {
-   console.log(window.scrollY);
    if(window.scrollY < 300) {
     this.homeActive = true;
    } else {
